@@ -378,8 +378,6 @@
       const patogeno = document.getElementById("patogeno").value;
       const tabela = document.getElementById("tabela").value;
       const n_interno = document.getElementById("n_interno").value;
-
-      // Redireciona para a página de resultados.html com os parâmetros da pesquisa
       window.location.href = `/resultados.html?ano=${ano}&patogeno=${patogeno}&tabela=${tabela}&n_interno=${n_interno}`;
     }
 
@@ -412,13 +410,14 @@
       window.location.href =
         "https://sites.google.com/view/vig-genomica/p%C3%A1gina-inicial";
     }
+
     function help() {
       location.href = "help.html";
     }
 
     function settings() {
-      console.log("Settings clicked!"); // Verifica se a função está sendo chamada
-      location.href = "settings.html"; // Redireciona para settings.html
+      console.log("Settings clicked!");
+      location.href = "settings.html";
     }
   </script>
 </html>
